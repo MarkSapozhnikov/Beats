@@ -1,0 +1,35 @@
+.section{
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__why{
+    background: #fff;
+}
+
+.section__review{
+    background: #fff;
+}
+
+.section__delivery{
+    background: url("/images/Векторный\ смарт-объект.png") center bottom no-repeat;
+    background-color: #161616;
+    color: #fff;
+}
+
+.section__title{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+.section__title--review{
+    margin-bottom: 45px;
+}
+
