@@ -2,7 +2,10 @@ $containerWidth: 940px;
 $baseFontSize: 16px;
 $grey: #f5f5f5;
 $z-fixed-menu: 100;
+$tablets: 768px;
+$phones: 480px;
 
+@import "media";
 @import "normalize";
 @import "layout";
 @import "components/hero";
@@ -19,117 +22,8 @@ $z-fixed-menu: 100;
 @import "components/form.scss";
 @import "components/radio.scss";
 @import "components/fixed-menu.scss";
-
-// .section-welcome{
-//     display: flex;
-//     justify-content: flex-end;
-// }
-
-// .container{
-//     margin: 0 auto;
-//     width: 950px;
-// }
-
-
-// .header{
-//     padding-top: 30px;
-//     margin-bottom: 80px;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
-
-// .header__col{
-//     display: flex;
-//     align-items: center;
-// }
-
-// .header__col--align--right{
-//     justify-content: flex-end;
-// }
-// .logo{
-//     display: block;
-//     margin-right: 38px;
-// }
-
-// .logo__pic{
-//     width: 42px;
-//     height: 42px;
-// }
-
-// .menu__item{
-//     display: inline-block;
-//     vertical-align: middle;
-//     margin-right: 27px;
-// }
-// .contacts{
-//     font-style: normal;
-//     text-align: right;
-// }
-
-// .contacts__pic{
-//     display: inline-block;
-// }
-// .contacts__phone{
-//     display: inline-block;
-//     text-decoration: none;
-// }
-
-
-// .hero{
-//     width: 38%;
-//     margin-bottom: 100px;
-// }
-
-// .hero-title{
-//     font-size: 48px;
-//     font-weight: bold;
-//     line-height: 1.1;
-//     margin-bottom: 18px;
-// }
-
-// .hero-subtitle{
-//     font-size: 18px;
-//     margin-bottom: 45px;
-// }
-
-// .btn{
-//     background: #e01f3d;
-//     border-radius: 100px;
-//     padding: 18px 39px;
-//     color: #fff;
-//     font-weight: bold;
-//     margin-bottom: 94px;
-// }
-// .btn:hover { 
-//     background: #ca1b36;
-// }
-
-// .info{
-//     display: flex;
-//     justify-content: space-between;
-//     margin-right: 100px;
-// }
-
-// .info__list {
-//     color: #000;
-//     display: inline-block;
-//     vertical-align: middle;
-//     margin-bottom: 100px;
-// }
-
-// .info__item{
-//     display: inline-block;
-//     margin-right: 47px;
-// }
-// .info-pic{
-//     display: inline-block;
-//     vertical-align: middle;
-//     margin-right: 10px;
-// }
-
-// .info-desc{
-//     display: inline-block;
-//     vertical-align: middle;
-// }
-
+@import "components/hamburger.scss";
+@import "components/menu.scss";
+@import "components/map.scss";
+@import "components/footer.scss";
+@import "components/socials.scss"; 
