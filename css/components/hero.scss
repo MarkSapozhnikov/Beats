@@ -11,6 +11,10 @@
         content: url("../images/icons/decor-p1.png");
     }
 
+    @include tablets {
+        min-height: initial;
+    }
+
 }
 
 
@@ -35,6 +39,10 @@
             
         }
     }
+
+    @include slipers {
+        margin-bottom: 0;
+    }
 }
 
 .hero__container{
@@ -43,6 +51,10 @@
     justify-content: space-between;
     height: 100%;
     padding: rem(24px) 0 rem(45px) 0;
+
+    @include slipers {
+        padding: rem(24px) 0 0 0;
+    }
 }
 
 .hero__main-title{
@@ -59,6 +71,11 @@
     @include phones {
         padding: 1.7% 8%;
     }
+
+    @include slipers {
+        font-size: 1.4rem;
+        padding: 1.7% 10%;
+    }
      
 }
 
@@ -69,6 +86,10 @@
 
     @include tablets {
         padding: 0 0%;
+    }
+
+    @include slipers {
+        font-size: 1.2rem;
     }
 }
 

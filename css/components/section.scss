@@ -1,8 +1,11 @@
 .section{
-    min-height: 100vh;
+    height: 100vh;
+    min-height: initial;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    
 }
 
 .section__why{
@@ -31,9 +34,19 @@
     color: #000000;
     text-transform: uppercase;
     margin-bottom: 5%;
+
+    @include slipers {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
 }
 
 .section__title--review{
     margin-bottom: rem(45px);
+
+    @include slipers {
+        margin-bottom: 0rem;
+    }
+
 }
 

@@ -9,6 +9,8 @@
     @include phones {
         padding: 0;
     }
+
+    
     
 }
 
@@ -45,24 +47,39 @@
     padding: rem(18px) rem(11px);
     border: solid rem(3px) transparent;
 
-
     &--textarea{
         height: rem(180px);
-        resize: none§;
+        resize: none;   
     }
+
     &:focus{
         border-color:#e01f3d;
         outline: none;
+    }
+
+    @include slipers {
+       padding: 0;
+    }
+}
+
+
+.form__input--textarea{
+    @include slipers {
+            height: 5rem;
     }
 }
 
 .form__controls{
     display: flex;
     flex-wrap: wrap;
-    
+
     @include phones {
         justify-content: center;
     }
+
+    @include slipers {
+        flex-wrap: nowrap;
+}
 }
 
 .form__title{
