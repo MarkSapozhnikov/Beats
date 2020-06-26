@@ -1,6 +1,5 @@
 .section{
-    height: 100vh;
-    min-height: 650px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,8 +19,13 @@
     color: #fff;
 }
 
+.section__map {
+    background: url("../images/карта.png") center center/cover no-repeat;
+    background-color: #cfdeda;
+}
+
 .section__title{
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
     text-align: center;
     color: #000000;
@@ -30,6 +34,6 @@
 }
 
 .section__title--review{
-    margin-bottom: 45px;
+    margin-bottom: rem(45px);
 }
 

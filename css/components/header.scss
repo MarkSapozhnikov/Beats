@@ -1,9 +1,20 @@
 .header{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding-top: 30px;
-    margin-bottom: 94px;
+    padding-top: rem(30px);
+    margin-bottom: 1.8rem;
+
+    @include tablets {
+        padding-top: 0;
+    }
+
+.header__contacts-phone{
+    @include tablets {
+        display: none;
+    }
+}
+
 }
 
 .hero__container{
@@ -14,55 +25,20 @@
 }
 
 .logo__pic{
-    width: 42px;
-    height: 42px;
-}
-.menu{
-    position: relative;
+    width: rem(42px);
+    height: rem(42px);
+    flex-shrink: 0;
 }
 
-.menu__list{
-    display: flex;
-    align-items: center;
-
-}
-
-.menu__item{
-    margin-right: 26px;
-
-    &:last-child{
-        margin-right: 0;
-    }
-}
-
-.menu__link{
-    text-decoration: none;
-}
-
-
-.contacts-phone{
-    font-size: 21px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.contacts-phone__text{
-    font-style: normal;
-    text-align: right;
-    text-decoration: none;
-}
-
-.contacts-phone__icon-elem{
-    width: 12px;
-    height: 12px;
-    margin-right: 6px;
-}
 
 .bg{
     position: absolute;
     width: 50%;
-    max-width: 600px;
+    max-width: rem(600px);
     left: 47%;
     top: 23%;
+
+    @include tablets {
+        display: none;
+    }
 }

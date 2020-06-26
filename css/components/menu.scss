@@ -1,0 +1,55 @@
+.menu{
+    position: relative;
+    margin: 0 30px;
+    padding-top: 5px;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu__list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu__item{
+    margin-right: rem(26px);
+    margin-bottom: 14px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.menu__link{
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.contacts-phone{
+    font-size: rem(21px);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+.contacts-phone__text{
+    font-style: normal;
+    text-align: right;
+    text-decoration: none;
+}
+
+.contacts-phone__icon{
+    flex-shrink: 0;
+}
+.contacts-phone__icon-elem{
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(6px);
+
+}

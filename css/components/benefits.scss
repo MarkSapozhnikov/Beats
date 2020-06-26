@@ -1,18 +1,38 @@
 .benefits{
     display: flex;
-}
+
+    @include phones {
+        flex-direction: column;
+    }
+}   
 
 .benefits__item{
     flex: 1;
     padding: 0 3%;
     position: relative;
 
+    @include phones {
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+
+
+    // @include tablets {
+    //     padding: 0 0%;
+    // }
+    
+
     &:before{
-        content: url("/images/icons/circles.png");
+        content: url("../images/icons/circles.png");
         position: absolute;
-        top: 55px;
+        top: rem(55px);
         right: 0;
         transform: translateX(50%);
+
+        @include tablets {
+            display: none;
+        }
+
     }
 
     &:first-child{
