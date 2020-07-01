@@ -4,6 +4,10 @@
     margin-bottom: rem(20px);
     overflow: hidden;
 
+    @include slipers {
+        padding: 0 rem(45px) 0;
+    }
+
     &::before{
         content: "";
         display: block;
@@ -15,6 +19,10 @@
         left: 50%;
         transform: translateX(-50%);
         top: rem(52px);
+
+        @include slipers {
+            display: none;
+        }
     }
 }
 
@@ -65,8 +73,13 @@
         padding-top: rem(17px);
 
         &::before{
-            content: url("../images/billie3.png");
+            content: url("../images/billie3.png") ;
         }
+    }
+
+    @include slipers {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -78,12 +91,23 @@
     @include tablets {
         margin-top: 1rem;
     }
+
+    @include slipers {
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     
 }
 
 .reviews__text{
     color: #666666;
     margin-bottom: rem(20px);
+
+    @include slipers {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
 }
 
 .reviews__author{

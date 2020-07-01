@@ -351,6 +351,11 @@ html {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 13px;
+  }
+}
 
 html, body {
   height: 100%;
@@ -444,6 +449,11 @@ button {
   right: 10%;
   content: url("../images/icons/decor-p1.png");
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: initial;
+  }
+}
 
 .hero__titile-section {
   width: 46%;
@@ -466,6 +476,11 @@ button {
     background: url("../images/icons/Эллипс 7.png") center center/contain no-repeat;
   }
 }
+@media screen and (max-width: 375px) {
+  .hero__titile-section {
+    margin-bottom: 0;
+  }
+}
 
 .hero__container {
   display: flex;
@@ -473,6 +488,11 @@ button {
   justify-content: space-between;
   height: 100%;
   padding: 1.5rem 0 2.8125rem 0;
+}
+@media screen and (max-width: 375px) {
+  .hero__container {
+    padding: 1.5rem 0 0 0;
+  }
 }
 
 .hero__main-title {
@@ -492,6 +512,12 @@ button {
     padding: 1.7% 8%;
   }
 }
+@media screen and (max-width: 375px) {
+  .hero__main-title {
+    font-size: 1.4rem;
+    padding: 1.7% 10%;
+  }
+}
 
 .hero-title-desc {
   font-size: 1.3125rem;
@@ -501,6 +527,11 @@ button {
 @media screen and (max-width: 768px) {
   .hero-title-desc {
     padding: 0 0%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-title-desc {
+    font-size: 1.2rem;
   }
 }
 
@@ -514,6 +545,11 @@ button {
 @media screen and (max-width: 768px) {
   .header {
     padding-top: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header {
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -533,6 +569,13 @@ button {
   width: 2.625rem;
   height: 2.625rem;
   flex-shrink: 0;
+  fill: blue;
+}
+@media screen and (max-width: 375px) {
+  .logo__pic {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 .bg {
@@ -550,6 +593,7 @@ button {
 
 .features {
   display: flex;
+  justify-content: start;
 }
 @media screen and (max-width: 768px) {
   .features {
@@ -571,6 +615,7 @@ button {
 .feature__icon {
   width: 2.8125rem;
   margin-right: 0.3125rem;
+  height: 2.75rem;
 }
 
 .feature__text {
@@ -607,7 +652,8 @@ button {
 }
 
 .section {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: initial;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -640,23 +686,44 @@ button {
   text-transform: uppercase;
   margin-bottom: 5%;
 }
+@media screen and (max-width: 375px) {
+  .section__title {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
 
 .section__title--review {
   margin-bottom: 2.8125rem;
+}
+@media screen and (max-width: 375px) {
+  .section__title--review {
+    margin-bottom: 0rem;
+  }
 }
 
 .headline {
   text-align: center;
   margin-bottom: 4.4375rem;
 }
+@media screen and (max-width: 375px) {
+  .headline {
+    margin-bottom: 1.4rem;
+  }
+}
 
 .headline__title {
-  white-space: wrap;
   padding-top: 5rem;
 }
 @media screen and (max-width: 480px) {
   .headline__title {
     font-size: 36px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .headline__title {
+    font-size: 1.5rem;
+    padding-top: 0;
   }
 }
 
@@ -673,6 +740,11 @@ button {
 @media screen and (max-width: 480px) {
   .headline__subtitle {
     padding: 0 7%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .headline__subtitle {
+    font-size: 1rem;
   }
 }
 
@@ -694,6 +766,11 @@ button {
   .benefits__item {
     padding: 0;
     margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .benefits__item {
+    margin-bottom: 1rem;
   }
 }
 .benefits__item:before {
@@ -738,6 +815,12 @@ button {
   overflow: hidden;
   margin-bottom: 1.25rem;
 }
+@media screen and (max-width: 375px) {
+  .benefit__image-wrapper {
+    width: 4.87rem;
+    height: 4.87rem;
+  }
+}
 
 .benefit__icon {
   width: 4.6875rem;
@@ -754,10 +837,21 @@ button {
   margin-bottom: 1.25rem;
   white-space: nowrap;
 }
+@media screen and (max-width: 375px) {
+  .benefit__title {
+    font-size: 1rem;
+    white-space: normal;
+  }
+}
 
 .benefit__desc {
   position: relative;
   color: #666666;
+}
+@media screen and (max-width: 375px) {
+  .benefit__desc {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -773,6 +867,11 @@ button {
   margin-bottom: 1.25rem;
   overflow: hidden;
 }
+@media screen and (max-width: 375px) {
+  .reviews__display {
+    padding: 0 2.8125rem 0;
+  }
+}
 .reviews__display::before {
   content: "";
   display: block;
@@ -784,6 +883,11 @@ button {
   left: 50%;
   transform: translateX(-50%);
   top: 3.25rem;
+}
+@media screen and (max-width: 375px) {
+  .reviews__display::before {
+    display: none;
+  }
 }
 
 .reviews__display-inner {
@@ -838,6 +942,12 @@ button {
     content: url("../images/billie3.png");
   }
 }
+@media screen and (max-width: 375px) {
+  .reviews__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .reviews__title {
   font-size: 1.6875rem;
@@ -849,10 +959,23 @@ button {
     margin-top: 1rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .reviews__title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 
 .reviews__text {
   color: #666666;
   margin-bottom: 1.25rem;
+}
+@media screen and (max-width: 375px) {
+  .reviews__text {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
 }
 
 .reviews__author {
@@ -945,11 +1068,22 @@ button {
 }
 .form__input--textarea {
   height: 11.25rem;
-  resize: none§;
+  resize: none;
 }
 .form__input:focus {
   border-color: #e01f3d;
   outline: none;
+}
+@media screen and (max-width: 375px) {
+  .form__input {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form__input--textarea {
+    height: 5rem;
+  }
 }
 
 .form__controls {
@@ -959,6 +1093,11 @@ button {
 @media screen and (max-width: 480px) {
   .form__controls {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .form__controls {
+    flex-wrap: nowrap;
   }
 }
 
@@ -982,12 +1121,9 @@ button {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("../images/icons/Прямоугольник 17 копия.png");
+  border-radius: 0;
 }
 
-.radio__elem {
-  display: none;
-}
 .radio__elem:focus {
   border-color: #e01f3d;
   outline: none;
@@ -1191,34 +1327,9 @@ button {
   background: center center no-repeat;
 }
 
-.socials__item--icon--telegram .socials__link {
-  background-image: url("../images/socials/telegram.png");
+.icon--telegram {
+  fill: blue;
 }
-
-.socials__item--icon--telegram .socials__link:hover {
-  background-image: url("../images/socials/telegram2.png");
-}
-
-.socials__item--icon--vk .socials__link {
-  background-image: url(../images/socials/vkontakte.png);
-}
-
-.socials__item--icon--vk .socials__link:hover {
-  background-image: url(../images/socials/vkontakte2.png);
-}
-
-.socials__item--icon--fb .socials__link {
-  background-image: url(../images/socials/facebook.png);
-}
-
-.socials__item--icon--fb .socials__link:hover {
-  background-image: url(../images/socials/facebook2.png);
-}
-
-.socials__item--icon--insta .socials__link {
-  background-image: url(../images/socials/instagram.png);
-}
-
-.socials__item--icon--insta .socials__link:hover {
-  background-image: url(../images/socials/instagram2.png);
+.icon--telegram:hover {
+  fill: black;
 }

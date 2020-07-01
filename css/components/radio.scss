@@ -9,7 +9,7 @@
             border-radius: 0;
 
             &:before{
-                background: url("../images/icons/Прямоугольник 17 копия.png");
+                border-radius: 0;
             }
         }
         
@@ -17,7 +17,6 @@
 }
 
 .radio__elem{
-    display: none;
 
     &:focus{
         border-color:#e01f3d;

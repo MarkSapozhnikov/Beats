@@ -1,9 +1,12 @@
 .features{
     display: flex;
+    justify-content: start;
 
     @include tablets {
         display: none;
     }
+
+
 }
 
 .features__item{

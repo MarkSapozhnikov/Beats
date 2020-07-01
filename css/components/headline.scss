@@ -1,16 +1,25 @@
 .headline{
     text-align: center;
     margin-bottom: rem(71px);
+
+    @include slipers {
+        margin-bottom: 1.4rem;
+    }
 }
 
 .headline__title{
-    white-space: wrap;
     padding-top: 5rem;
 
     @include phones {
         
         font-size: 36px;
     }
+
+    @include slipers {
+        font-size: rem(24px);
+        padding-top: 0;
+    }
+    
     
 }
 
@@ -25,5 +34,9 @@
 
     @include phones {
         padding: 0 7%;
+    }
+
+    @include slipers {
+        font-size: 1rem;
     }
 }

@@ -13,3 +13,9 @@
         @content;
     }
 }
+
+@mixin slipers {
+    @media screen and (max-width: $slipers){
+        @content;
+    }
+}

@@ -16,6 +16,10 @@
         margin-bottom: 3rem;
     }
 
+    @include slipers {
+        margin-bottom: 1rem;
+    }
+
 
     // @include tablets {
     //     padding: 0 0%;

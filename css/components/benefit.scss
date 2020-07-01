@@ -16,6 +16,11 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: rem(20px);
+
+  @include slipers {
+    width: 4.87rem;
+    height: 4.87rem;
+}
 }
 
 .benefit__icon{
@@ -32,11 +37,21 @@
     font-weight: bold;
     margin-bottom: rem(20px);
     white-space: nowrap;
+
+    @include slipers {
+        font-size: 1rem;
+        white-space: normal;
+    }
 }
 
 .benefit__desc{
     position: relative;
     color: #666666;
+
+    @include slipers {
+        font-size: 1rem;
+    }
+
 }
 
 .benefit__image{
