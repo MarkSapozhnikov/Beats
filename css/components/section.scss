@@ -9,7 +9,16 @@
 }
 
 .section__why{
+    position: relative;
     background: #fff;
+
+    &:before{
+        position: absolute;
+        z-index: 1;
+        bottom: -1.5rem;
+        left: 5rem;
+        content: url("../images/icons/triangle.png");
+    }
 }
 
 .section__review{
@@ -20,6 +29,10 @@
     background: url("../images/bg2.png") center bottom no-repeat;
     background-color: #161616;
     color: #fff;
+}
+
+.section__title-delivery{
+    margin-top: 3rem;
 }
 
 .section__map {
@@ -50,3 +63,15 @@
 
 }
 
+.section__beats{
+    position: relative;
+
+    &:before{
+        position: absolute;
+        bottom: rem(-26px);
+        right: 10%;
+        z-index: 1;
+        content: url("../images/icons/square.png");
+    }
+
+}

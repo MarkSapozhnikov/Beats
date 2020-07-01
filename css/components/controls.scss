@@ -1,0 +1,61 @@
+.controls{
+    position: relative;
+    cursor: pointer;
+}
+
+
+.controls-arrow__left{
+    width: 15px;
+    height: 31px;
+    position: absolute;
+    left: 7rem;
+    top: -38rem;
+
+    &:hover{
+        fill: white;
+    }
+
+
+    @include tablets {
+        left: 8rem;
+        top: -39.68rem;
+    }
+
+    @include phones {
+        left: 3rem;
+        top: -32rem;
+    }
+
+    @include slipers{
+        right: 3rem;
+        top: -27rem;
+    }
+}
+
+.controls-arrow__right{
+    width: 15px;
+    height: 31px;
+    position: absolute;
+    right: 7rem;
+    top: -38rem;
+
+    &:hover{
+        fill: white;
+    }
+
+    @include tablets {
+        right: 8rem;
+        top: -39.68rem;
+    }
+
+    @include phones {
+        right: 3rem;
+        top: -32rem;
+    }
+
+    @include slipers{
+        right: 3rem;
+        top: -27rem;
+    }
+    
+}

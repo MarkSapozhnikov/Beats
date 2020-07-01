@@ -1,0 +1,173 @@
+.specific{
+    display: flex;
+    position: absolute;
+    width: rem(90px);
+    height: rem(90px);
+    background: #9a9a9a;
+    border-radius: rem(5px);
+    top: -6rem;
+    cursor: pointer;
+
+    &:hover{
+        background: #6e6e6e;
+    }
+
+    @include tablets {
+        display: none;
+    }
+}
+
+
+.beats__specific-img{
+    fill: white;
+    width: rem(35px);
+    height: rem(35px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.beats__titile-section{
+    position: absolute;
+    right: 20rem;
+    width: 28rem;
+    top: 32rem;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        right: 1rem;
+        width: 99%;
+        top: 29rem;
+    }
+
+    @include phones {
+        top: 18rem;
+    }
+
+    @include slipers {
+        top: 13rem;
+    }
+
+    @include tablets {
+        &:before{
+            content: "";
+            width: 25.75rem;
+            height: 25.75rem;
+            background: url(../images/beats2.png) center center/contain no-repeat;
+            position: absolute;
+            top: -29rem;
+
+            @include phones {
+                width: 21.75rem;
+                height: 21.75rem;
+                top: -25rem;
+            }
+
+            @include slipers {
+                width: 17.75rem;
+                height: 17.75rem;
+                top: -19rem;
+            }
+            
+        }
+    }
+}
+
+.beats__main-title{
+    font-weight: bold;
+    font-size: rem(36px);
+    text-transform: uppercase;
+
+
+    @include tablets {
+        margin-bottom: 1rem;
+    }
+    
+}
+
+.beats-title-desc{
+    color: #666666;
+    padding-right: 7%;
+
+    @include tablets {
+        padding: 0;
+    }
+}
+
+.beats--info__subtitle{
+    font-weight: bold;
+}
+
+.beats-price__numeral{
+    font-size: 36px;
+    display: inline-block;
+    margin-right: 3rem;
+
+    @include tablets {
+        padding: 0;
+        margin-right: 2rem;
+    }
+}
+
+.beats__list{
+    margin: 0;
+    display: inline;
+    padding-right: 30rem;
+
+
+    @include tablets {
+        padding: 0;
+        margin-top: rem(-30px);
+    }
+
+    @include phones {
+        margin-top: -20px;
+
+    }
+    
+}
+
+.beats__item{
+    display: inline-block;
+    margin-right: 9rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    @include tablets {
+        padding: 0;
+        margin-right: 7rem;
+    }
+}
+
+.beats-price{
+    display: inline;
+
+    @include tablets {
+        margin-top: -15px;
+    }
+}
+
+.beats-bg{
+    position: absolute;
+    width: 41%;
+    max-width: 37.5rem;
+    left: 0rem;
+    top: 29rem;
+
+    @include tablets {
+        display: none;
+         padding: 0;
+        margin: 0;
+    }
+}
+
+
