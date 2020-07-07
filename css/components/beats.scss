@@ -1,48 +1,16 @@
-.specific{
-    display: flex;
-    position: absolute;
-    width: rem(90px);
-    height: rem(90px);
-    background: #9a9a9a;
-    border-radius: rem(5px);
-    top: -6rem;
-    cursor: pointer;
-
-    &:hover{
-        background: #6e6e6e;
-    }
-
-    @include tablets {
-        display: none;
-    }
-}
-
-
-.beats__specific-img{
-    fill: white;
-    width: rem(35px);
-    height: rem(35px);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
 
 .beats__titile-section{
-    position: absolute;
-    right: 20rem;
-    width: 28rem;
-    top: 32rem;
+    
+    width: 50%;
+    margin-left: rem(40px);
 
     @include tablets {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        position: absolute;
-        right: 1rem;
-        width: 99%;
-        top: 29rem;
+        width: 78%;
+        margin: 0;
     }
 
     @include phones {
@@ -54,27 +22,27 @@
     }
 
     @include tablets {
-        &:before{
-            content: "";
-            width: 25.75rem;
-            height: 25.75rem;
-            background: url(../images/beats2.png) center center/contain no-repeat;
-            position: absolute;
-            top: -29rem;
+        // &:before{
+        //     content: "";
+        //     width: 25.75rem;
+        //     height: 25.75rem;
+        //     background: url(../images/beats2.png) center center/contain no-repeat;
+        //     position: absolute;
+        //     top: -29rem;
 
-            @include phones {
-                width: 21.75rem;
-                height: 21.75rem;
-                top: -25rem;
-            }
+        //     @include phones {
+        //         width: 21.75rem;
+        //         height: 21.75rem;
+        //         top: -25rem;
+        //     }
 
-            @include slipers {
-                width: 17.75rem;
-                height: 17.75rem;
-                top: -19rem;
-            }
+        //     @include slipers {
+        //         width: 17.75rem;
+        //         height: 17.75rem;
+        //         top: -19rem;
+        //     }
             
-        }
+        // }
     }
 }
 
@@ -157,17 +125,18 @@
 }
 
 .beats-bg{
-    position: absolute;
+    
     width: 41%;
     max-width: 37.5rem;
-    left: 0rem;
-    top: 29rem;
 
     @include tablets {
-        display: none;
-         padding: 0;
-        margin: 0;
+       width: 59%;
+       margin-bottom: rem(50px);
     }
+
+    @include phones {
+        margin-bottom: 1.1rem;
+     }
 }
 
 

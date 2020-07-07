@@ -1,15 +1,22 @@
-.controls{
-    position: relative;
+.controls {
     cursor: pointer;
+    position: absolute; 
+    top: 50%;
+    width: 100%;
 }
 
+.controls-arrowL{
+    left: 0;
+}
+
+.controls-arrowR{
+    right: 0;
+}
 
 .controls-arrow__left{
     width: 15px;
     height: 31px;
-    position: absolute;
-    left: 7rem;
-    top: -38rem;
+
 
     &:hover{
         fill: white;
@@ -35,9 +42,6 @@
 .controls-arrow__right{
     width: 15px;
     height: 31px;
-    position: absolute;
-    right: 7rem;
-    top: -38rem;
 
     &:hover{
         fill: white;
@@ -59,3 +63,14 @@
     }
     
 }
+
+#right {
+    position: absolute;
+    right: 0;
+}
+
+#left {
+    position: absolute;
+    left: 0;
+}
+
