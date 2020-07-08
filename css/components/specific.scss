@@ -1,15 +1,18 @@
 .specific{
     display: flex;
-    position: absolute;
+    position: relative;
     width: rem(90px);
     height: rem(90px);
     background: #9a9a9a;
     border-radius: rem(5px);
-    top: -6rem;
     cursor: pointer;
 
     &:hover{
         background: #6e6e6e;
+
+        .specific__elem{
+            display: block;
+        }
     }
 
     @include tablets {
@@ -41,9 +44,9 @@
     left: 5.7rem;
 }
 
-.specific__elem-done{
-    display: block;
-}
+// .specific__elem-done{
+//     display: block;
+// }
 
 .specific__list{
     display: flex;

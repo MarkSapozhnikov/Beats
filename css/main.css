@@ -1411,6 +1411,7 @@ button {
     top: 13rem;
   }
 }
+
 .beats__main-title {
   font-weight: bold;
   font-size: 2.25rem;
@@ -1508,8 +1509,6 @@ button {
 
 .controls {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
   width: 100%;
 }
 
@@ -1528,24 +1527,6 @@ button {
 .controls-arrow__left:hover {
   fill: white;
 }
-@media screen and (max-width: 768px) {
-  .controls-arrow__left {
-    left: 8rem;
-    top: -39.68rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .controls-arrow__left {
-    left: 3rem;
-    top: -32rem;
-  }
-}
-@media screen and (max-width: 375px) {
-  .controls-arrow__left {
-    right: 3rem;
-    top: -27rem;
-  }
-}
 
 .controls-arrow__right {
   width: 15px;
@@ -1554,32 +1535,18 @@ button {
 .controls-arrow__right:hover {
   fill: white;
 }
-@media screen and (max-width: 768px) {
-  .controls-arrow__right {
-    right: 8rem;
-    top: -39.68rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .controls-arrow__right {
-    right: 3rem;
-    top: -32rem;
-  }
-}
-@media screen and (max-width: 375px) {
-  .controls-arrow__right {
-    right: 3rem;
-    top: -27rem;
-  }
-}
 
 #right {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
 }
 
 #left {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
 }
 
@@ -1592,12 +1559,10 @@ button {
   box-shadow: none;
 }
 .slider .bx-wrapper .bx-viewport {
-  overflow: unset !important;
   top: 6rem;
 }
 
 .slider__list {
-  display: flex;
   position: relative;
   width: 100%;
 }
@@ -1666,16 +1631,18 @@ button {
 
 .specific {
   display: flex;
-  position: absolute;
+  position: relative;
   width: 5.625rem;
   height: 5.625rem;
   background: #9a9a9a;
   border-radius: 0.3125rem;
-  top: -6rem;
   cursor: pointer;
 }
 .specific:hover {
   background: #6e6e6e;
+}
+.specific:hover .specific__elem {
+  display: block;
 }
 @media screen and (max-width: 768px) {
   .specific {
@@ -1704,10 +1671,6 @@ button {
   width: 16.875rem;
   height: 17.5rem;
   left: 5.7rem;
-}
-
-.specific__elem-done {
-  display: block;
 }
 
 .specific__list {
@@ -1767,10 +1730,31 @@ button {
 }
 
 .team__title {
+  display: flex;
+  align-items: center;
+  margin-left: 1.4rem;
+}
+@media screen and (max-width: 768px) {
+  .team__title {
+    display: inline-block;
+  }
+}
+.team__title:focus .team__triangle {
+  border: 7px solid transparent;
+  border-top: 7px solid #000;
+}
+
+.team__name {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-size: 1.125rem;
   font-weight: bold;
+}
+
+.team__triangle {
+  border: 7px solid transparent;
+  border-bottom: 7px solid #000;
+  margin-left: 0.5rem;
 }
 
 .team__item {

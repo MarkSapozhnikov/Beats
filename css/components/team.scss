@@ -16,8 +16,8 @@
 
     @include tablets{
         display: flex;
-    flex-direction: column;
-    text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
     
 }
@@ -25,13 +25,38 @@
 .team__item{
     text-align: center;
 }
+
 .team__title{
+    display: flex;
+    align-items: center;
+    margin-left: 1.4rem;
+
+    @include tablets {
+        display: inline-block;
+    }
+
+
+    &:focus{
+        .team__triangle{
+            border: 7px solid transparent;
+            border-top: 7px solid #000;
+        }
+    }
+
+    
+}
+.team__name{
     margin-top: 1rem;
     margin-bottom: .5rem;
     font-size: rem(18px);
     font-weight: bold;
 
+}
 
+.team__triangle{
+    border: 7px solid transparent;
+    border-bottom: 7px solid #000;
+    margin-left: .5rem;
 }
 .team__item{
     margin-right: 1rem;
