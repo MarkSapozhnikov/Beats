@@ -1,0 +1,75 @@
+.specific{
+    display: flex;
+    position: absolute;
+    width: rem(90px);
+    height: rem(90px);
+    background: #9a9a9a;
+    border-radius: rem(5px);
+    top: -6rem;
+    cursor: pointer;
+
+    &:hover{
+        background: #6e6e6e;
+    }
+
+    @include tablets {
+        display: none;
+    }
+}
+
+
+.beats__specific-img{
+    fill: white;
+    width: rem(35px);
+    height: rem(35px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.specific__elem{
+    display: none;
+    position: absolute;
+    background: white;
+    opacity: 0.98;
+    border-radius: rem(5px);
+    color: #000;
+    font-size: rem(16px);
+    width: rem(270px);
+    height: rem(280px);
+    left: 5.7rem;
+}
+
+.specific__elem-done{
+    display: block;
+}
+
+.specific__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.specific__item{
+    display: flex;
+    margin-left: 2rem;
+    margin-bottom: 1.7rem;
+}
+.function__icon{
+    display: flex;
+    width: rem(26px);
+    height: rem(30px);
+}
+
+.function__name{
+    display: flex;
+    margin-left: 2rem;
+}
+
+.function__info{
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    font-weight: bold;
+}

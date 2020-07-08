@@ -18,7 +18,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: rem(52px);
+        top: -2.75rem;
 
         @include slipers {
             display: none;
@@ -63,7 +63,6 @@
     padding-bottom: rem(18px);
     padding-right: rem(121px);
     padding-top: rem(17px);
- 
 
     @include tablets {
         flex: 1;
@@ -72,7 +71,7 @@
         padding-right: rem(20px);
         padding-top: rem(17px);
 
-        &::before{
+        &:before{
             content: url("../images/billie3.png") ;
         }
     }
@@ -120,4 +119,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.reviews__list{
+    position: relative;
+    min-height: 280px;
+}
+
+.reviews__item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    transition: 2s;
+    opacity: 0;
+}
+
+.reviews__item--active{
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.reviews__switcher-item {
+    width: rem(80px);
+    height: rem(80px);
+    position: relative;
+    border: rem(6px) solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.reviews--active{
+    border-color: red; 
 }

@@ -1,14 +1,28 @@
 .slider{
     display: flex;
-    width: 100vw;
-    height: 100vw;
+     
+
+    .bx-wrapper{
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+
+        .bx-viewport{
+            overflow: unset !important;
+            top: 6rem;
+            }
+
+    }
+    
 }
 
+
 .slider__list{
+    
     display: flex;
     position: relative;
-    right: 0;
-    transition: right .3s;
+    width: 100%;
+
 }
 
 .slider__item {
@@ -16,7 +30,16 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    width: 100vw;
-    height: 100vw;
+    width: 100%;
+
+    @include tablets {
+       flex-direction: column;
+    }
+
+    @include phones {
+        width: 90%;
+        margin: 0 auto;
+     }
+
 }
   

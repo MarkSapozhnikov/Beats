@@ -1,3 +1,14 @@
-const leftBtn = document.querySelector("#left");
-const rightBtn = document.querySelector("#right");
-const itemsList = document.querySelector("#items");
+const slider = $('.slider__list').bxSlider({
+    pager: false,
+    controls: false
+});
+
+$(".controls-arrowL").click(e => {
+    e.preventDefault();
+    slider.goToPrevSlide()
+});
+
+$(".controls-arrowR").click(e => {
+    e.preventDefault();
+    slider.goToNextSlide()
+});
