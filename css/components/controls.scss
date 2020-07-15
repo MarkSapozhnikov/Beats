@@ -1,7 +1,5 @@
 .controls {
     cursor: pointer;
-    position: absolute; 
-    top: 50%;
     width: 100%;
 }
 
@@ -23,20 +21,20 @@
     }
 
 
-    @include tablets {
-        left: 8rem;
-        top: -39.68rem;
-    }
+    // @include tablets {
+    //     left: 8rem;
+    //     top: -39.68rem;
+    // }
 
-    @include phones {
-        left: 3rem;
-        top: -32rem;
-    }
+    // @include phones {
+    //     left: 3rem;
+    //     top: -32rem;
+    // }
 
-    @include slipers{
-        right: 3rem;
-        top: -27rem;
-    }
+    // @include slipers{
+    //     right: 3rem;
+    //     top: -27rem;
+    // }
 }
 
 .controls-arrow__right{
@@ -47,30 +45,34 @@
         fill: white;
     }
 
-    @include tablets {
-        right: 8rem;
-        top: -39.68rem;
-    }
+    // @include tablets {
+    //     right: 8rem;
+    //     top: -39.68rem;
+    // }
 
-    @include phones {
-        right: 3rem;
-        top: -32rem;
-    }
+    // @include phones {
+    //     right: 3rem;
+    //     top: -32rem;
+    // }
 
-    @include slipers{
-        right: 3rem;
-        top: -27rem;
-    }
+    // @include slipers{
+    //     right: 3rem;
+    //     top: -27rem;
+    // }
     
 }
 
 #right {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
 }
 
 #left {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
 }
 

@@ -20,30 +20,6 @@
     @include slipers {
         top: 13rem;
     }
-
-    @include tablets {
-        // &:before{
-        //     content: "";
-        //     width: 25.75rem;
-        //     height: 25.75rem;
-        //     background: url(../images/beats2.png) center center/contain no-repeat;
-        //     position: absolute;
-        //     top: -29rem;
-
-        //     @include phones {
-        //         width: 21.75rem;
-        //         height: 21.75rem;
-        //         top: -25rem;
-        //     }
-
-        //     @include slipers {
-        //         width: 17.75rem;
-        //         height: 17.75rem;
-        //         top: -19rem;
-        //     }
-            
-        // }
-    }
 }
 
 .beats__main-title{
