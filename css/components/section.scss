@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    
 }
 
 .section__why{
@@ -33,7 +35,10 @@
     margin-top: 3rem;
 }
 
-
+.section__map {
+    background: url("../images/карта.png") center center/cover no-repeat;
+    background-color: #cfdeda;
+}
 
 .section__title{
     font-size: rem(48px);
@@ -74,19 +79,3 @@
 .section__team{
     background: white;
 }
-
-.section__menu{
-    position: relative;
-    background: #000;
-    background: url("../../images/menu-back.png") left/cover no-repeat;
-   
-}
-
-.section__title-menu{
-    color: white;
-    text-align: left;
-    position: relative;
-    top: -15rem;
-    margin-left: 3rem;
-}
-

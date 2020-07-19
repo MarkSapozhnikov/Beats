@@ -3,26 +3,12 @@
     top: 35%;
     right: 3%;
     z-index: $z-fixed-menu;
-    border-color: white;
-}
-.fixed-menu__white{
-    position: fixed;
-    top: 35%;
-    right: 3%;
-    z-index: $z-fixed-menu;
-    
 }
 
 .fixed-menu__item{
     margin-bottom: rem(5px);
 
     &--active {
-        .fixed-menu__link{
-            border-color: #000;
-        }
-    }
-
-    &:hover{
         .fixed-menu__link{
             border-color: #000;
         }
