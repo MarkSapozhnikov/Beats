@@ -28,6 +28,10 @@
 .menu__link{
     text-decoration: none;
     white-space: nowrap;
+
+    &:hover{
+        color: #e01f3d;
+    }
 }
 
 .contacts-phone{
