@@ -24,6 +24,22 @@
 
 .team__item{
     text-align: center;
+    margin-right: 1rem;
+
+    &:last-child{
+        margin-right: 0;
+
+        @include tablets{
+            margin-right: 1rem;
+        }
+    
+    }
+
+    &:active {
+        .team__triangle{
+           transform: translateY(50%) rotate(180deg);
+        }
+    }
 }
 
 .team__title{
@@ -33,15 +49,16 @@
 
     @include tablets {
         display: inline-block;
+        font-size: 3rem;
     }
 
 
-    &:focus{
-        .team__triangle{
-            border: 7px solid transparent;
-            border-top: 7px solid #000;
-        }
-    }
+    // &:active{
+    //     .team__triangle{
+    //         border: 7px solid transparent;
+    //         border-top: 7px solid #000;
+    //     }
+    // }
 
     
 }
@@ -55,21 +72,10 @@
 
 .team__triangle{
     border: 7px solid transparent;
-    border-bottom: 7px solid #000;
+    border-bottom: 7px solid #f00;
     margin-left: .5rem;
 }
-.team__item{
-    margin-right: 1rem;
 
-    &:last-child{
-        margin-right: 0;
-
-        @include tablets{
-            margin-right: 1rem;
-        }
-    
-    }
-}
 
 .team__content-block-work{
     color: #000;

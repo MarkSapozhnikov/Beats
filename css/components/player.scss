@@ -6,6 +6,7 @@
 }
 
 .player__splash{
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -31,4 +32,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 25px;
+}
+
+.player__icon {
+    width: 22px;
+    height: 27px;
+    padding: 4px;
+    fill: white;
 }

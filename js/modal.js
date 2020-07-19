@@ -1,5 +1,6 @@
 const openButton = document.querySelector("#openOverlay");
 const body = document.body;
+// const overlayElement = document.querySelector(".menu");
 
 $(document).ready(() => {
     $('.hamburger').on('click', e => {
@@ -10,23 +11,8 @@ $(document).ready(() => {
     
         $('.menu').removeClass('menu__overlay');
     });
-    $('.specific').on('click', e => {
-        
-        $('.specific__elem').addClass('specific__elem-done');
+    $('.menu__link').on('click', e => {
+    
+        $('.menu').removeClass('menu__overlay');
     });
-    
-    
-
-    const closeElement = document.createElement("a");
-    closeElement.classList.add("close");
-    closeElement.href = "#";
-    
-
-    closeElement.addEventListener("click", e => {
-        e.preventDefault();
-        body.removeChild(overlayElement);
-    });
-
-    overlayElement.appendChild(closeElement);
-    body.appendChild(overlayElement);
 });
